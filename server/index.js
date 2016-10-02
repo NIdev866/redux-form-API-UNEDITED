@@ -4,6 +4,8 @@ const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const router = require('./router');
+
 
 
 // ----------------------------------------------
@@ -16,6 +18,10 @@ app.use(morgan('combined'));
 // body parser middleware for parsing any incoming 
 // requests to JSON
 app.use(bodyParser.json({ type: '*/*' }));
+
+// handle routes
+router(app);
+
 
 
 // ----------------------------------------------
