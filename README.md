@@ -8,9 +8,13 @@ Development tools and techniques include:
 
 * Node
 * Express
+* MongoDB
+* Mongoose
+* bcrypt (password hashing)
+* Passport (authentication middleware)
+* JSON Web Token (JWT) authentication
 * ES6
 * API server
-* JSON Web Token (JWT) authentication
 * AJAX
 * React
 * Redux
