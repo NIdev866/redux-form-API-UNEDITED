@@ -19,7 +19,7 @@ const app = express();
 // morgan middleware for logging messages for debugging
 app.use(morgan('combined'));
 
-// allow CORS
+// allow CORS, optionally specify domains 'cors(HERE)'
 app.use(cors());
 
 // body parser middleware for parsing any incoming 
