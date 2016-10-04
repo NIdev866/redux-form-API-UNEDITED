@@ -14,6 +14,16 @@ class Signin extends Component {
     this.props.signinUser({ email, password });
   }
   
+  renderAlert() {
+    if (this.props.errorMessage) {
+      return (
+        <div className="alert alert-danger">
+          <strong>Oops!</strong> {this.props.errorMessage}
+        </div>
+      );
+    }
+  }
+  
   render() {
     const { handleSubmit, fields: { email, password} } = this.props;
     
@@ -21,12 +31,13 @@ class Signin extends Component {
       <form onSubmit={handleSubmit(this.handleFormSubmit)}>
         <fieldset className="form-group">
           <label>Email:</label>
-          <input {...email} className="form-control"/>
+          <input {...email} className="form-control" />
         </fieldset>
         <fieldset className="form-group">
           <label>Password:</label>
-          <input {...password} className="form-control"/>
+          <input {...password} type="password" className="form-control" />
         </fieldset>
+        {this.renderAlert()}
         <button action="submit" 
                 className="btn btn-primary">
           Sign in
@@ -36,7 +47,14 @@ class Signin extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    errorMessage: state.auth.error
+  };
+}
+
+// reducForm is used here as connect
 export default reduxForm({
   form: 'signin',
   fields: ['email', 'password']
-}, null, actions)(Signin);
+}, mapStateToProps, actions)(Signin);
