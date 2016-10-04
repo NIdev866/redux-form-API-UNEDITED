@@ -19,8 +19,11 @@ Development tools and techniques include:
 * API server
 * AJAX
 * React
+* React Router
 * Redux
-* Promises (Axios)
+* Redux Form
+* Redux Thunk
+* Axios (Promise-based http client)
 * Babel
 * Webpack
 * Node
@@ -29,10 +32,34 @@ Development tools and techniques include:
 
 ## Getting Started
 
-```
-  > git clone https://github.com/PiotrBerebecki/server-side-user-authentication.git
-  > cd server-side-user-authentication
-  > npm install
-  > npm start
-```
+
+    > git clone https://github.com/PiotrBerebecki/server-and-client-side-user-authentication.git
+    > cd server-side-user-authentication
+    > npm install
+  
+Open 3 tabs/windows of command line tool:
+
+1. Tab (client)
+
+
+    > npm run start
+
+2. Tab (server)
+
+
+    > npm run dev
+  
+3. Tab (server - mongoDB)
+* Windows:
+
+
+    > mongod --dbpath "C:\Users\USERNAME\Desktop\server-and-client-side-user-authentication\server\data\db"
+    
+* Linux / Max, navigare to `server` directory
+
+
+    > mongod
+
+
+
 Open browser at http://localhost:8080/

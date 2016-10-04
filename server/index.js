@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const router = require('./router');
 const mongoose = require('mongoose');
-
+const cors = require('cors');
 
 // DB Setup
 mongoose.connect('mongodb://localhost:auth/auth');
@@ -18,6 +18,9 @@ const app = express();
 
 // morgan middleware for logging messages for debugging
 app.use(morgan('combined'));
+
+// allow CORS
+app.use(cors());
 
 // body parser middleware for parsing any incoming 
 // requests to JSON
