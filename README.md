@@ -1,6 +1,8 @@
-# Server side user authentication
+# Server and client side user authentication
 
-This is an API server that will serve JSON data only to authenticated users.
+This is a front- and back-end user authentication app. It consists of:
+* user sign in and sign up forms,
+* API server that will serve JSON data only to authenticated users.
 
 The app has been developed by Piotr Berebecki as part of undertaking an excellent course: [Advanced React and Redux](https://www.udemy.com/react-redux-tutorial) by Stephen Grider.
 
