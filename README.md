@@ -14,19 +14,19 @@ Development tools and techniques include:
 * Mongoose
 * bcrypt (password hashing)
 * Passport (authentication middleware)
+* CORS (Cross-Origin Resource Sharing)
 * JSON Web Token (JWT) authentication
 * ES6
 * API server
-* AJAX
 * React
 * React Router
 * Redux
 * Redux Form
 * Redux Thunk
+* AJAX
 * Axios (Promise-based http client)
 * Babel
 * Webpack
-* Node
 * Git
 * GitHub
 
