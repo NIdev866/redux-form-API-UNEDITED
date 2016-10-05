@@ -39,27 +39,27 @@ Development tools and techniques include:
   
 Open 3 tabs/windows of command line tool:
 
-1. Tab (client)
+1. Tab (in the `client` directory)
 
 
     > npm run start
 
-2. Tab (server)
+2. Tab (in the `server` directory)
 
-
-    > npm run dev
-  
-3. Tab (server - mongoDB)
 * Windows:
 
 
     > mongod --dbpath "C:\Users\USERNAME\Desktop\server-and-client-side-user-authentication\server\data\db"
     
-* Linux / Max, navigare to `server` directory
+* Linux / Max, it may be sufficient to just run:
 
 
     > mongod
 
+3. Tab (in the `server` directory)
+
+
+    > npm run dev
 
 
 Open browser at http://localhost:8080/
