@@ -87,3 +87,4 @@ export default reduxForm({
   fields: ['email', 'password', 'passwordConfirm'],
   validate
 }, mapStateToProps, actions)(Signup);
+
